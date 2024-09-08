@@ -1,12 +1,11 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #d4cbcb;
 }
 
 .sobreMi {
     height: 500px;
     display: flex;
     width: 100%;
-    background-image: url("./Fondo.jpg");
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -16,7 +15,9 @@ body {
     text-align: center;
     flex-direction: column;
 }
-
+.pInfo{
+    width: 80%;
+}
 .sobreMi h1 {
     color: black;
     position: absolute;
@@ -29,7 +30,7 @@ body {
     height: 200px;
     background-color: aliceblue;
     border-radius: 10px;
-    border: 3px solid rgb(87, 157, 238);
+    border: 3px solid rgb(30, 54, 82);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,10 +97,8 @@ body {
     width: 40px;
     margin-right: 10px;
 }
-
-.navbar {
-    border-radius: 15px; /* Ajusta el radio de los bordes */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra más suave */
+#nav{
+    background-color: pink;
 }
 .nav-link {
     color: #000000 !important; /* Asegura que el texto de los enlaces sea blanco */
@@ -107,3 +106,10 @@ body {
 .nav-link:hover {
     color: #007bff !important; /* Color al pasar el ratón sobre los enlaces */
 }
+
+@media (max-width: 700px) {
+    .sobreMi .miInfo{
+      width: 90%;
+      height: fit-content;
+    }
+  }
